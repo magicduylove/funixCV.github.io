@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+    --primary-color:rgb(0, 217, 255);
+}
+
+
+
+.banner-name {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.nav-item span{
+    color: #000;
+}
+
+.social-icon{
+    color:var(--primary-color)
+}
+/* */
+
+/* middle of image */
+@media only screen and (min-width: 1000px){
+    .nav-item{
+    
+        display: flex;
+        justify-content: center;
+        /* Space elements evenly */
+        align-items: center;
+        text-align: center;
+    }
+    .nav-item-middle:nth-child(3) {
+    
+        display: flex;
+        justify-content: center;
+        /* Space elements evenly */
+        align-items: center;
+        text-align: center;
+    }
+    .profile-img{
+        border: none;
+        padding: 10px;
+        width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .profile-img{
+        border: none;
+        display: none;
+    }
+}
+
+/* Thong tin ca nhan */
+.hidden{
+    display: none;
+}
+.icon-size{
+    width: 400px;
+}
+
+.time span{
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    
+}
+.time{
+    font-style: italic;
+}
+
+li::marker{
+    font-size: 20px;
+    color: var(--primary-color);
+    padding-left: 10px;
+}
+
+.colored{
+    background-color: var(--primary-color);
+    display: inline-block;
+    height: 10px;
+    margin-right: 10px;
+    width: 70px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.noColor{
+    background-color: rgb(173, 173, 173);
+    display: inline-block;
+    height: 10px;
+    margin-right: 10px;
+    width: 70px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.col{
+    grid-auto-rows: max-content;
+}
+
+.circle i{
+    padding: 10px;
+}
+/* button */
+button{
+    color: white;
+
+    background: var(--primary-color);
+}
+.btn-show-more button{
+    background-color: rgb(250, 233, 47);
+    padding: 0 10px;
+    border: solid rgb(250, 233, 47) ;
+    border-radius: 20px;
+    bottom: 10px;
+    left: 30%;
+}
+.btn-show-less{
+    padding: 20px;
+}
+
+.btn-show-less button{
+    background-color: rgb(250, 233, 47);
+    padding: 0 10px;
+    border: solid rgb(250, 233, 47) ;
+    border-radius: 20px;
+    bottom: 10px;
+    left: 100px;
+}
+/* Certificate */
+@media only screen and (min-width:1000px) {
+    .wrapper{
+        border-bottom: solid orange;
+        
+        border-width: 4px;  
+    }
+    .container:first-child  .wrapper{
+        border-right: solid orange;
+    }
+}
+.containter i{
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+    color:var(--primary-color)
+}
